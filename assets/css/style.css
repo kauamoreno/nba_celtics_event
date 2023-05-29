@@ -31,6 +31,7 @@ header {
     font-size: 1vw;
     position: relative;
     color: white;
+    padding: 10px;
 }
 
 /*Animação do link*/
@@ -72,12 +73,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .acoes {
+    margin-top: 50px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    height: 400px;
 }
 
 #form {
@@ -105,77 +110,23 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-.form-box {
-    max-width: 800px;
-    background: #f1f7fe;
-    overflow: hidden;
-    border-radius: 16px;
-    color: #010101;
+/*FORMULARIO******************/
+.btn_cadastrar{
+    color: white;
+    background-color: #008348;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+.btn_cadastrar:hover{
+    background-color: #006a3a;
 }
 
-.form {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 32px 24px 24px;
-    gap: 16px;
-    text-align: center;
-}
 
-/*Form text*/
-.title {
-    font-weight: bold;
-    font-size: 1.6rem;
-}
 
-.subtitle {
-    font-size: 1rem;
-    color: #666;
-}
-
-/*Inputs box*/
-.form-container {
-    overflow: hidden;
-    border-radius: 8px;
-    background-color: #fff;
-    margin: 1rem 0 .5rem;
-    width: 100%;
-}
-
-.input {
-    background: none;
-    border: 0;
-    outline: 0;
-    height: 40px;
-    width: 100%;
-    border-bottom: 1px solid #eee;
-    font-size: .9rem;
-    padding: 8px 15px;
-}
-
-/*Button*/
-.form button {
-    background-color: #0066ff;
-    color: #fff;
-    border: 0;
-    border-radius: 24px;
-    padding: 10px 16px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color .3s ease;
-}
-
-.form button:hover {
-    background-color: #005ce6;
+/*LISTA DE PESSOAS**************/
+.pessoas_lista{
+    width: 300px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
