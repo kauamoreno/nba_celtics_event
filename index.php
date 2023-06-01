@@ -52,8 +52,7 @@
                         <input type="text" class="input" placeholder="R.G" name="rg" required>
                     </div>
                     <center>
-                        <!-- <button class="btn_cadastrar">Cadastrar</button> -->
-                        <input type="submit" value="Cadastrar" class="btn_cadastrar">
+                        <button class="btn_cadastrar">Cadastrar</button>
                     </center>
                 </form>
             </div>
