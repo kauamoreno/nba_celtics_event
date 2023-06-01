@@ -104,7 +104,7 @@ header {
 
 .header_form,
 .header_pessoas {
-    width: 100%;
+    /* width: 100%; */
     color: #fff;
     background-color: #008348;
     padding: 20px;
@@ -140,7 +140,7 @@ header {
 
 /*LISTA DE PESSOAS**************/
 .pessoas_lista {
-    width: 300px;
+    width: 500px;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }

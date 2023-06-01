@@ -14,6 +14,32 @@
 
 <body>
 
+    <?php
+    //Conectar com o banco de dados
+    $conn = mysqli_connect("localhost", "root", "", "banco");
+
+    //Verificar se o formulário foi enviado pelo método POST
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $rg = $_POST['rg'];
+
+        //Cria os valores SQL para inserir um registro na tabela
+        $sql = "INSERT INTO pessoas (nome, email, rg) VALUES ('$nome', '$email', '$rg')";
+
+        //Verifica se o formulário foi enviado com sucesso
+        if (mysqli_query($conn, $sql)) {
+            echo "Registro inserido com sucesso";
+        } else {
+            echo "Registro não efetivado";
+        }
+
+        // Redirecionar o usuário para a mesma página
+        header("Location: " . $_SERVER['REQUEST_URI']);
+        exit();
+    }
+    ?>
+
     <header>
         <div class="inicio_header">
             <img width="60px" src="assets/img/favicon.svg" alt="Logo" class="logo">
@@ -70,31 +96,13 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>João</td>
-                                <td>joao@example.com</td>
-                                <td>25</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Maria</td>
-                                <td>maria@example.com</td>
-                                <td>30</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Carlos</td>
-                                <td>carlos@example.com</td>
-                                <td>28</td>
-                            </tr>
                             <?php //Acrescentando linha na table*********************************************
 
                             //Conectar com o banco de dados
-                            $conn = mysqli_connect("localhost", "root", "", "nomes");
+                            $conn = mysqli_connect("localhost", "root", "", "banco");
 
                             // Definir a consulta SQL para selecionar os registros da tabela
-                            $tabela = "SELECT * FROM nomes";
+                            $tabela = "SELECT * FROM pessoas";
 
                             // Executar a consulta SQL e armazenar o resultado em uma variável
                             $resultado_tabela = mysqli_query($conn, $tabela);
@@ -120,38 +128,14 @@
 
     <footer></footer>
 
-
-    <?php
-    //Conectar com o banco de dados
-    $conn = mysqli_connect("localhost", "root", "", "nomes");
-
-    //Verificar se o formulário foi enviado pelo método POST
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $rg = $_POST['rg'];
-
-        //Cria os valores SQL para inserir um registro na tabela
-        $sql = "INSERT INTO nomes (nome, email, rg) VALUES ('$nome', '$email', '$rg')";
-
-        //Verifica se o formulário foi enviado com sucesso
-        if (mysqli_query($conn, $sql)) {
-            echo "Registro inserido com sucesso";
-        } else {
-            echo "Registro não efetivado";
-        }
-    }
-    ?>
-
     <script>
-
         document.addEventListener('DOMContentLoaded', () => {
             let pessoas = document.querySelector('.pessoas_lista');
-            
+
             // Rolar automaticamente para o final
             pessoas.scrollTop = pessoas.scrollHeight;
         });
-
     </script>
 </body>
+
 </html>
