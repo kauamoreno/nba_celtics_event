@@ -115,11 +115,11 @@ header {
 
 
 /*FORMULARIO******************/
-.form-box{
+.form-box {
     width: 300px;
 }
 
-.header_form{
+.header_form {
     width: 100%;
 }
 
@@ -150,8 +150,34 @@ header {
 /*LISTA DE PESSOAS**************/
 .pessoas_lista {
     width: 700px;
+    height: 400px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    position: relative;
+    z-index: 1;
+}
+
+.header_pessoas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+thead {
+    position: sticky;
+    top: 65px; /* Altura do header_pessoas */
+    background-color: #f2f2f2;
+    z-index: 1;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f2f2f2;
 }
 
 table {
@@ -254,21 +280,26 @@ ul li a {
         align-items: center;
     }
 
-    .pessoas_lista{
+    .pessoas_lista {
         margin-top: 150px;
     }
 
     .direita_header a {
         font-size: 15px;
     }
+
+    .direita_header {
+        width: 70%;
+    }
 }
 
 @media (max-width: 750px) {
 
-    .texto h1{
+    .texto h1 {
         font-size: 20px;
     }
-    .texto p{
+
+    .texto p {
         padding-top: 20px;
         font-size: 14px;
     }
@@ -283,7 +314,7 @@ ul li a {
     }
 
     .direita_header a {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 
@@ -299,8 +330,13 @@ ul li a {
         height: 400px;
     }
 
-}
+    .pessoas_lista,
+    .header_pessoas,
+    .tabela {
+        width: 100%;
+    }
 
+}
 
 @media (max-width: 550px) {
     .banner {
