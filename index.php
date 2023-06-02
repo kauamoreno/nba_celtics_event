@@ -45,12 +45,10 @@
             <img width="60px" src="assets/img/favicon.svg" alt="Logo" class="logo">
         </div>
         <div class="direita_header">
-            <a href="#">TIME</a>
             <a href="#">INGRESSOS</a>
             <a href="#">CRONOGRAMA</a>
             <a href="#">NOTICIAS</a>
             <a href="#">COMUNIDADE</a>
-            <a href="#">LOJA</a>
         </div>
     </header>
 
@@ -69,9 +67,8 @@
         <div class="acoes">
 
             <div class="form-box">
-                <div class="header_form">Cadastro</div>
+                <div class="header_form"><img src="assets/img/favicon.svg" width="25px">Cadastro</div>
                 <form class="form" method="POST" action="">
-                    <span class="subtitle">Coloque suas informações para se cadastrar</span>
                     <div class="form-container">
                         <input type="text" class="input" placeholder="Nome completo" name="nome" required> <br>
                         <input type="email" class="input" placeholder="E-mail" name="email" required> <br>
@@ -84,7 +81,7 @@
             </div>
 
             <div class="pessoas_lista">
-                <div class="header_pessoas">Pessoas</div>
+                <div class="header_pessoas"><img src="assets/img/favicon.svg" width="25px">Pessoas</div>
                 <div>
                     <table class="tabela">
                         <thead>

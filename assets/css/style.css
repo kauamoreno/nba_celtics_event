@@ -28,7 +28,7 @@ header {
 }
 
 .direita_header a {
-    font-size: 1vw;
+    font-size: 20px;
     position: relative;
     color: white;
     padding: 10px;
@@ -82,7 +82,9 @@ header {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    height: 400px;
+    height: 100%;
+    width: 100%;
+
 }
 
 #form {
@@ -113,6 +115,13 @@ header {
 
 
 /*FORMULARIO******************/
+.form-box{
+    width: 300px;
+}
+
+.header_form{
+    width: 100%;
+}
 
 .form-container input {
     padding: 10px;
@@ -231,4 +240,70 @@ ul li a {
     background-color: #006a3a;
     padding: 10px 0;
     text-align: center;
+}
+
+
+
+/*******************************************************/
+
+/*RESPONSIVIDADE ***************/
+@media (max-width: 1200px) {
+    .acoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pessoas_lista{
+        margin-top: 150px;
+    }
+
+    .direita_header a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+
+    .texto h1{
+        font-size: 20px;
+    }
+    .texto p{
+        padding-top: 20px;
+        font-size: 14px;
+    }
+
+    .acoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .direita_header {
+        width: 80%;
+    }
+
+    .direita_header a {
+        font-size: 10px;
+    }
+
+
+    /*Imagem menor*/
+    .banner img {
+        display: none;
+    }
+
+    .banner {
+        background-image: url("../img/celtics2.png");
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+    .banner {
+        height: 300px;
+    }
 }
