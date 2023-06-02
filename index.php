@@ -89,7 +89,7 @@
                                 <th>Número</th>
                                 <th>Nome</th>
                                 <th>E-mail</th>
-                                <th>Idade</th>
+                                <th>RG</th>
                             </tr>
                         </thead>
                         <tbody>
