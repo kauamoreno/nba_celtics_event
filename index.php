@@ -75,7 +75,7 @@
                     <div class="form-container">
                         <input type="text" class="input" placeholder="Nome completo" name="nome" required> <br>
                         <input type="email" class="input" placeholder="E-mail" name="email" required> <br>
-                        <input type="text" class="input" placeholder="R.G" name="rg" required>
+                        <input type="text" class="input" placeholder="R.G" name="rg" id="rg" maxlength="12" required>
                     </div>
                     <center>
                         <button class="btn_cadastrar">Cadastrar</button>
@@ -136,6 +136,8 @@
             pessoas.scrollTop = pessoas.scrollHeight;
         });
     </script>
+
+    <script src="./assets/js/rg.js"></script>
 </body>
 
 </html>
