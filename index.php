@@ -126,7 +126,32 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="custom-shape-divider-top-1685707474">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container_footer">
+            <div class="footer-conteudo">
+                <h3>Contato</h3>
+                <p>Telefone: (123) 456-7890</p>
+                <p>Email: kaua.moreno2005@gmail.com</p>
+            </div>
+            <div class="footer-conteudo">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2023 Kauã Amaral Moreno. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
