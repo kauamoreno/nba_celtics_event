@@ -2,7 +2,7 @@
 
 Aplicação desenvolvida em PHP e banco de dados para armazenar as informações, com o objetivo de gerenciar a marcação de presença em eventos de basquete.
 
-![celtics](https://github.com/kauamoreno/nba_celtics_event/assets/119445003/ea6470ed-a04d-4936-8fcc-ab3d347ab574)
+![celtics](assets/img/celtics.jpeg)
 
 <br>
 
